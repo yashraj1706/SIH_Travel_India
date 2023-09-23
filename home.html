@@ -104,6 +104,21 @@
     margin: 0 auto;
     padding: 0 20px;
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.grid-item {
+  text-align: center;
+  padding: 0; /* Remove padding */
+}
+
+.grid-item img {
+  max-width: 100%;
+}
       
     </style>
 </head>
@@ -336,37 +351,33 @@
     </section>
     
     
-    <section id="explore_region">
+    <section id="explore_region bg-tertiary">
         <div class="container marketing mt-5 bg-body-tertiary">
 
-            <!-- 4 columns -->
+            
             <h1 class="text-center" id="unique-h1">Explore by Regions</h1>
-            <table>
-                <tr>
-                    <td>
-                        <h2>North</h2>
-                        <img src="./images/north-india-region-map-labelled-black-vector-27671541.jpg"  width="200"  alt="North Region Image">
-                        <p>This is the Northern region.</p>
-                    </td>
-                    <td>
-                        <h2>South</h2>
-                        <img src="./images/south-india-region-map-labelled-black-vector-27671543.jpg"   width="300" alt="South Region Image">
-                        <p>This is the Southern region.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <h2>East</h2>
-                        <img src="./images/east-india-region-map-labelled-black-vector-27671540.jpg" width="200" alt="East Region Image">
-                        <p>This is the Eastern region.</p>
-                    </td>
-                    <td>
-                        <h2>West</h2>
-                        <img src="./images/western-india-region-map-labelled-black-vector-27671544.jpg"  width="300" alt="West Region Image">
-                        <p>This is the Western region.</p>
-                    </td>
-                </tr>
-            </table>
+            <div class="grid-container">
+          <div class="grid-item">
+              <h2>North</h2>
+              <img src="./images/north-india-region-map-labelled-black-vector-27671541.jpg" width="200" alt="North Region Image">
+              <p>This is the Northern region.</p>
+          </div>
+          <div class="grid-item">
+              <h2>South</h2>
+              <img src="./images/south-india-region-map-labelled-black-vector-27671543.jpg" width="300" alt="South Region Image">
+              <p>This is the Southern region.</p>
+          </div>
+          <div class="grid-item">
+              <h2>East</h2>
+              <img src="./images/east-india-region-map-labelled-black-vector-27671540.jpg" width="200" alt="East Region Image">
+              <p>This is the Eastern region.</p>
+          </div>
+          <div class="grid-item">
+              <h2>West</h2>
+              <img src="./images/western-india-region-map-labelled-black-vector-27671544.jpg" width="300" alt="West Region Image">
+              <p>This is the Western region.</p>
+          </div>
+      </div>
         
         
             <!-- region explain chalu -->
