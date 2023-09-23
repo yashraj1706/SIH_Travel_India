@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Gloock&family=Josefin+Sans:ital,wght@0,400;1,300&family=Metrophobic&family=Montserrat:ital@1&family=PT+Serif&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./home.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+                table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 20px;
+            text-align: center;
+        }
+
+        #unique-h1 {
+            color:#BEADFA;
+            max-width: 1200px;
+            font-size: 60px;
+            font-weight: bold;
+        }
+
+        #unique-h11 {
+            color:#85E6C5;
+            max-width: 1200px;
+            font-size: 60px;
+            font-weight: bold;
+        }
+
+        h2 {
+            margin-bottom: 5px;
+        }
+       
+        .about-section {
+            background-color: #E5CFF7;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+          }
+          
+          .about-section1 {
+            text-decoration: none;
+            color: #9D76C1;
+            padding: 10px;
+            
+          }
+
+          .about-section1:hover {
+            color: #713ABE;
+          }
+          
+          /* Media query for mobile screens */
+          @media (max-width: 768px) {
+            .about-section1 {
+              display: block;
+              margin-bottom: 10px;
+            }
+          }
+          
+          
+         
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 10px 0; 
+    position: fixed;
+    width: 100%; 
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+    display: flex; 
+    align-items: center;
+}
+
+
+.navbar-text {
+    color: #fff; 
+    font-size: 24px;
+    text-decoration: none; 
+    font-weight: bold; 
+    transition: color 0.3s ease; 
+}
+
+
+.navbar-text:hover {
+    color: #85E6C5; 
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+      
+    </style>
+</head>
+<body>
+    <section class="nav_bar">
+        <header class="p-3 text-bg-dark">
+            <div class="container">
+              <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                  <img src="./assets/icons8-namaste-100.png" alt="" style="width:50px;height:50px"/>
+                </a>
+                
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 mx-2">
+                  <li><a href="#" class="nav-link px-2 text-white">Home</a></li>
+                  <li><a href="#trending" class="nav-link px-2 text-white">Trending</a></li>
+                  <li>
+                    <div class="btn-group">
+                    <button type="button" class="btn btn-outline-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Explore by
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#explore_interest">Interest</a></li>
+                      <li><a class="dropdown-item" href="#explore_region">Region</a></li>
+                      <!-- <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Separated link</a></li> -->
+                    </ul>
+                    </div>
+                    </li>
+                </ul>
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                    <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+                  </form>
+                <div class="text-end">  
+                  <a href="login.html"><button type="button" class="btn btn-outline-light me-2">Login</button></a>
+                  <button type="button" class="btn btn-warning">Sign-up</button>
+                </div>
+              </div>
+            </div>
+          </header>
+    </section>
+
+
+    <section class="carousel_trending" id="trending">
+
+        <div class="container mt-5">
+            <div class="p-5 text-center bg-body-tertiary rounded-3">
+                <h1 class="display-5 fw-bold" style="color:#ff7192;">#Trending</h1>
+                <p class="lead">Unveil India's Present Marvels: Trending Destinations Await</p>
+            </div>
+          </div>
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                      <img src="./assets/meghalya_abode of clouds.webp" alt="" class="w-100" style="height:86vh;object-fit: cover;">
+                      <div class="container">
+                        <div class="carousel-caption text-start">
+                          <h1>Meghalya Abode of Clouds</h1>
+                          <p class="opacity-100">Meghalaya is famous for its hills, lush greenery and its natural beauty. Meghalaya is also famous for its huge orchids.</p>
+                          <p><a class="btn btn-lg btn-light" href="#">Explore</a></p>
+                        </div>
+                    </div>
+              </div>
+              <div class="carousel-item">
+                  <img src="./assets/rann utsav.jpg" alt="" class="w-100" style="height:86vh;object-fit: cover;">
+                  <div class="container">
+                    <div class="carousel-caption">
+                      <h1>Rann Utsav</h1>
+                      <p>Authentic Handicraft Items, Bandini Sarees, Traditional Ornaments & many more items which give you wow experience.</p>
+                      <p><a class="btn btn-lg btn-light" href="#">Explore</a></p>
+                    </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <img src="./assets/Konark-Sun-Temple-Wheel.webp" class="d-block w-100" alt="Konark-Sun-Temple-Wheel" style="height:86vh;object-fit: cover;">
+              
+                  <div class="container">
+                  <div class="carousel-caption text-end">
+                  <h1>Konark Sun Temple</h1>
+                  <p>A UNESCO World Heritage site, Konark Sun Temple is famous for its unique architecture. Its geometrical patterns and carved wheels used to serve as sun dials.</p>
+                  <p><a class="btn btn-lg btn-light" href="#">Explore</a></p>
+                  </div>
+              </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+
+
+    <section class="explore_interest" id="explore_interest">
+        <div class="container">
+            <div class="container mt-5 mb-2">
+                <div class="p-5 text-center bg-body-tertiary rounded-3">
+                  <h1 class="display-5 fw-bold" style="color:#8bb68b">Explore by Interest</h1>
+                  <p class="lead">
+                    Discover India, Your Way
+                  </p>
+                </div>
+              </div>
+            <div class="row align-items-md-stretch">
+                <div class="col-md-6">
+                  <div class="h-100 p-5 text-bg-dark rounded-3" style="background-image: url(./assets/exp_spiri.jpg);background-position: center center;background-size: 100%;">
+                    <h2>Spirituality</h2>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+                    <h2>Visit Spiritual Places</h2>
+                    <p>India is a land of spiritual diversity, where ancient traditions and sacred sites beckon travelers on a journey of inner discovery. From the serene banks of the Ganges in Varanasi to the tranquil temples of Rishikesh, immerse yourself in the spiritual essence of this mystical land.</p>
+                    <button class="btn btn-dark" type="button">Explore
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                            <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+                        </svg>
+                    </button>
+                  </div>
+                </div>
+            </div>
+
+            <div class="row align-items-md-stretch">
+                <div class="col-md-6">
+                  <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+                    <h2>Visit Cultural/ Historic Places</h2>
+                    <p>Step back in time and explore India's rich history and cultural heritage. Marvel at the timeless beauty of the Taj Mahal, trace the footsteps of ancient dynasties in Jaipur's palaces, and uncover the intricate sculptures of Khajuraho's temples. Each site is a testament to India's storied past.</p>
+                    <button class="btn btn-dark" type="button">Explore
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                            <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+                        </svg>
+                    </button>
+                    
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="h-100 p-5 text-bg-dark rounded-3" style="background-image: url(./assets/exp_cultural.jpg);background-position: center center;background-size: 100%;">
+                    <h2>Cultural/Historic</h2>
+                  </div>
+                </div>
+            </div>
+            
+            <div class="row align-items-md-stretch">
+                <div class="col-md-6">
+                  <div class="h-100 p-5 text-bg-dark rounded-3" style="background-image: url(./assets/exp_hills_leh.jpg);background-position: center center;background-size: 106%;">
+                    <h2>Hills</h2>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+                    <h2>Visit Hill Stations/ Trekking</h2>
+                    <p>Escape to the picturesque hill stations of India, where lush green valleys, misty landscapes, and the crisp mountain air offer a perfect retreat from the hustle and bustle of city life. Explore the charming streets of Shimla, the romantic beauty of Darjeeling, and the tranquility of Manali.</p>
+                    <button class="btn btn-dark" type="button">Explore
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                        <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+                    </svg>
+                </button>
+                  </div>
+                </div>
+            </div>
+
+            <div class="row align-items-md-stretch">
+                <div class="col-md-6">
+                  <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+                    <h2>Visit Beaches/ Costal areas</h2>
+                    <p>India's coastline offers diverse coastal experiences. From the tropical paradise of Goa to the Andaman Islands' turquoise waters, and the serene enchantment of Kerala's Backwaters, each destination promises a unique coastal experience. Kerala's Backwaters, with their tranquil waterways and traditional houseboats, offer a peaceful escape amidst lush greenery.</p>
+                    <button class="btn btn-dark" type="button">Explore<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                        <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+                    </svg></button>
+                    
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="h-100 p-5 text-bg-dark rounded-3" style="background-image: url(./assets/exp_costal.jpg);background-position: center center;background-size: 125%;">
+                    <h2>Beaches/Costal</h2>
+                  </div>
+                </div>
+            </div>
+
+            <div class="row align-items-md-stretch">
+                <div class="col-md-6">
+                  <div class="h-100 p-5 text-bg-dark rounded-3" style="background-image: url(./assets/exp_ruban.jpg);background-position: center center;background-size: 100%;">
+                    <h2>Urban Exploration</h2>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+                    <h2>Try Urban Exploration</h2>
+                    <p>India's vibrant cities are a tapestry of modernity and tradition, where every street corner reveals a new story. Dive into the chaos and charm of Mumbai's bustling markets, savor the flavors of Kolkata's culinary delights, and get lost in the architectural wonders of Delhi. Urban exploration in India is an adventure in itself</p>
+                    <button class="btn btn-dark" type="button">Explore<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                        <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+                    </svg></button>
+                  </div>
+                </div>
+            </div>
+
+            <div class="row align-items-md-stretch">
+                <div class="col-md-6">
+                  <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+                    <h2>Visit Adventure/Wildlife Places</h2>
+                    <p>Embark on thrilling adventures amidst India's diverse landscapes. From the dense jungles of Jim Corbett National Park to the rugged terrains of Leh-Ladakh, the country offers unparalleled opportunities for wildlife encounters, trekking, and adrenaline-pumping activities.</p>
+                    <button class="btn btn-dark" type="button">Explore<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                        <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+                    </svg></button>
+                    
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="h-100 p-5 text-bg-dark rounded-3" style="background-image: url(./assets/peacock-green-grass-beautiful-green-feathers-bird-trees-6000x3901-2147.jpg);background-position: center center;background-size: 100%;">
+                    <h2>Adventure/Wildlife</h2>
+                  </div>
+                </div>
+            </div>
+                
+        </div>
+    </section>
+    
+    
+    <section id="explore_region bg-tertiary">
+        <div class="container marketing mt-5 bg-body-tertiary">
+
+            <!-- 4 columns -->
+            <h1 class="text-center" id="unique-h1">Explore by Regions</h1>
+            <table>
+                <tr>
+                    <td>
+                        <h2>North</h2>
+                        <img src="./images/north-india-region-map-labelled-black-vector-27671541.jpg"  width="200"  alt="North Region Image">
+                        <p>This is the Northern region.</p>
+                    </td>
+                    <td>
+                        <h2>South</h2>
+                        <img src="./images/south-india-region-map-labelled-black-vector-27671543.jpg"   width="300" alt="South Region Image">
+                        <p>This is the Southern region.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2>East</h2>
+                        <img src="./images/east-india-region-map-labelled-black-vector-27671540.jpg" width="200" alt="East Region Image">
+                        <p>This is the Eastern region.</p>
+                    </td>
+                    <td>
+                        <h2>West</h2>
+                        <img src="./images/western-india-region-map-labelled-black-vector-27671544.jpg"  width="300" alt="West Region Image">
+                        <p>This is the Western region.</p>
+                    </td>
+                </tr>
+            </table>
+        
+        
+            <!-- region explain chalu -->
+            <div class="container col-xxl-8 px-4 py-5">
+                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                  <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="./images/northi.webp" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                  </div>
+                  <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3" style="color: #F8DE22 !important;">NORTH</h1>
+    
+    
+                    <p class="lead">North India is a culturally diverse and historically rich region in India. It's known for its stunning landscapes, including the Himalayas, iconic landmarks like the Taj Mahal, spiritual destinations, and delicious cuisine. Visitors experience warm hospitality, a blend of traditions, and a vibrant cultural tapestry in this captivating part of the country.</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        <a href="north.html" class="btn btn-primary btn-lg px-4 me-md-2" style="background-color: #713ABE; border-color: #713ABE;">
+                            Explore
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                                <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+                            </svg>
+                        </a>
+                        
+                        
+                        
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="container col-xxl-8 px-4 py-5">
+                <div class="row flex-lg-row align-items-center g-5 py-5">
+                    <div class="col-lg-6 text-end">
+                        <img src="./images/sooo.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                    </div>
+                    <div class="col-10 col-sm-8 col-lg-6">
+                        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3" style="color: #FF6666 !important;">SOUTH</h1>
+    
+                        <p class="lead">South India is a region of captivating contrasts. With its lush landscapes, ancient temples, vibrant festivals, and diverse cuisine, it offers a rich tapestry of experiences. From the serene backwaters of Kerala to the bustling metropolises like Chennai and Bangalore, South India is a harmonious blend of tradition and modernity. Visitors are welcomed with warmth and hospitality as they explore this culturally rich and naturally beautiful part of India.</p>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                            <a href="south.html" class="btn btn-primary btn-lg px-4 me-md-2" style="background-color: #713ABE; border-color: #713ABE;">
+                                Explore
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                                    <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container col-xxl-8 px-4 py-5">
+                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                  <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="./images/eeee.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                  </div>
+                  <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3" style="color: #7EAA92 !important;">EAST</h1>
+                    <p class="lead">East India is a region of diverse landscapes and rich heritage. It's home to lush green forests, the mighty Brahmaputra River, and the culturally vibrant states of West Bengal, Bihar, Odisha, and more. East India's heritage shines through its ancient temples, historic cities like Kolkata, and a deep-rooted love for arts and literature. The region's cuisine, including delectable sweets and seafood dishes, is a culinary delight. East India's warm hospitality and a blend of traditional and modern lifestyles make it a captivating destination for exploration and discovery.</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        <a href="east.html" class="btn btn-primary btn-lg px-4 me-md-2" style="background-color: #713ABE; border-color: #713ABE;">
+                            Explore
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                                <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="container col-xxl-8 px-4 py-5">
+                <div class="row flex-lg-row align-items-center g-5 py-5">
+                    <div class="col-lg-6 text-end">
+                        <img src="./images/westii.webp" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                    </div>
+                    <div class="col-10 col-sm-8 col-lg-6">
+                        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3" style="color: #75C2F6 !important;">WEST</h1>
+                        <p class="lead">West India is a land of contrasts and colorful diversity. With the golden sands of Gujarat's deserts, the vibrant spirit of Mumbai, and the serene beaches of Goa, this region offers a wide array of experiences. West India is known for its rich history, reflected in ancient forts, palaces, and cave temples. The cuisine is a treat for the taste buds, with spicy curries, street food delights, and sweet desserts. Visitors can embrace the cultural fusion of tradition and modernity, all while enjoying the warm hospitality that characterizes this dynamic part of India.</p>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                            <a href="west.html" class="btn btn-primary btn-lg px-4 me-md-2" style="background-color: #713ABE; border-color: #713ABE;">
+                                Explore
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                                    <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        
+            <!-- /ending man:( -->
+        
+          </div>
+    
+    </section>
+    <section id="footer">
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+              <p class="col-md-4 mb-0 text-body-secondary">© Desi Tech</p>
+          
+              <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <img src="./assets/icons8-namaste-100.png" height="50"/>
+              </a>
+          
+              <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+              </ul>
+            </footer>
+          </div>
+    </section>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>
